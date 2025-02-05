@@ -7,9 +7,9 @@
 
 bool prime ( int number , int i ) 
 {
-    if ( i*i >= number )  return true ;
+    if ( i*i > number )  return true ;
     if ( number % i == 0 )  return false ;
-    return prime ( number , i *= 2 ) ;
+    return prime ( number , i + 1 ) ;
 }
 
 int main ()
