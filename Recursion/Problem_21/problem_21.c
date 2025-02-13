@@ -12,11 +12,10 @@ int binary_search ( int arr [] , int left , int right , int target )
 
     if ( arr [mid] == target )  return mid ;
     
-    else 
-        if ( arr [mid] > target ) 
-            return binary_search ( arr , left , mid - 1 , target ) ;
-    else 
-        return binary_search ( arr , mid + 1 , right , target ) ;
+    if ( arr [mid] > target ) 
+        return binary_search ( arr , left , mid - 1 , target ) ;
+    
+    return binary_search ( arr , mid + 1 , right , target ) ;
 }
 
 int main () 
