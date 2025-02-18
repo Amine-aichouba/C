@@ -15,7 +15,7 @@ List* init () {
     return NULL ;
 }
 
-List* push_end ( List* head , int val ) 
+List* push_back ( List* head , int val ) 
 {
     List* current = head ;
     List* node = ( List* ) malloc ( sizeof ( List ) ) ;
@@ -86,7 +86,7 @@ int main ()
         {
             printf ( "\n* Enter data for node %d : " , i ) ;
             scanf ( " %d" , &val ) ;
-            head = push_end ( head , val ) ;
+            head = push_back ( head , val ) ;
         }  
 
     printf ( "\n\n* Data entered in the list : " ) ;
