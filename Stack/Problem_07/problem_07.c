@@ -92,8 +92,6 @@ int main ()
             fgets ( expression , MAX , stdin ) ;
 
             expression [ strcspn ( expression , "\n" ) ] = 0 ;
-
-            if ( strcmp ( expression , "exit" ) == 0 )  break ; 
             
             if ( is_Balanced ( expression ) ) 
                 printf ( "\n\n* The expression is balanced.\n" ) ;
