@@ -8,10 +8,10 @@
 
 
 typedef struct 
-    {
-        int items [MAX] ;
-        int top ;
-    } Stack ;
+        {
+            int items [MAX] ;
+            int top ;
+        } Stack ;
 
 
 void init ( Stack* stack ) {

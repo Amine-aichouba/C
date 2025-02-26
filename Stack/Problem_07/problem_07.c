@@ -10,10 +10,10 @@
 
 
 typedef struct 
-    { 
-        int top ;
-        char items [MAX] ;
-    } Stack ;
+        { 
+            int top ;
+            char items [MAX] ;
+        } Stack ;
 
 
 void init ( Stack* stack ) {

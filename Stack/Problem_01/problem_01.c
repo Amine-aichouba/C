@@ -15,7 +15,7 @@
 #define MAX_STACK 10
 
 
-typedef struct Stack
+typedef struct 
         {
             int top ;
             int items [MAX_STACK] ;
